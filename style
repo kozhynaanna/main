@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    margin: 0;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 400px;
+    background-color:#2c242a;
+    padding-top: 2%;
+}
+.content {
+    display:flex;
+    flex-direction: column;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 12pt;
+    text-indent:1cm;
+    padding:0 4% 0 4%;
+    text-align: justify;
+    flex: 1 0 800px;
+
+}
+.content h2 {
+    text-transform: uppercase;
+}
+a {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12pt;
+    text-transform:uppercase;
+    padding:2%;
+    text-decoration: none;
+    color: rgba(176, 241, 255, 0.94);
+}
+
+.menu ::before,::after {
+    color: #ff3313;
+}
+a[href*="main"]::before {
+    padding: 2%;
+    content:"\1F310";
+}
+a[href*=about]::before {
+    padding: 2%;
+    content:"\003F""\003F" ;
+}
+a[href*="contacts"]::before {
+    padding: 2%;
+    content:"\2709";
+}
+a[target="_blank"]::before {
+    padding: 3%;
+    content: "\0066";
+    text-transform: lowercase;
+}
+a[target="_blank"]::after {
+    padding: 2%;
+    content: "\2197";
+}
+
+a:hover {
+    background-color: #5e2eff;
+}
+.content>:not(#main) {
+    display: none;
+}
+#about:target {
+    display: block;
+}
+#contacts:target {
+    display: block;
+}
+@media all and (min-width: 521px) and (max-width: 960px){
+ .menu {
+     flex:1 2 30px;
+ }
+    .content {
+        flex: 2 1 600px;
+    }
+    .menu a {
+        visibility:hidden;
+    }
+        ::before {
+        visibility: visible;
+    }
+    }
+@media all and (max-width: 520px) and (min-width: 200px) {
+    body {
+        flex-direction: column;;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex:1 2 50px;
+    }
+    .content{
+        padding: 1%;
+
+    }
+    .menu a {
+        visibility:hidden;
+    }
+    ::before {
+        visibility: visible;
+    }
+}
+
