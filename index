@@ -6,57 +6,17 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<aside class="menu">
-    <a href="#main">main</a>
-    <a href="#about" >about</a>
-    <a href="#contacts">contacts</a>
-    <a href="https://www.facebook.com/" target="_blank">facebook</a>
-</aside>
-<section class="content">
-    <div id="main">
-        <h2 >main</h2>
-
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque delectus dolorum et fuga itaque
-            pariatur qui tempora temporibus velit. Adipisci assumenda consequatur consequuntur excepturi expedita illo
-            labore nihil non?
-        </div>
-        <div>Aliquam beatae cupiditate doloremque rerum tempora veritatis. Ab accusantium atque culpa dignissimos
-            eveniet explicabo maxime soluta voluptatem? Consequuntur et exercitationem facere modi qui quo reiciendis
-            repellendus repudiandae, saepe sed veritatis?
-        </div>
-        <div>Aperiam assumenda consequuntur distinctio eligendi error esse illum impedit, laudantium mollitia,
-            praesentium provident recusandae saepe suscipit ullam voluptates. Aliquam blanditiis hic molestias nesciunt
-            nostrum odio quae quaerat saepe temporibus voluptatum!
-        </div>
-        <div>Asperiores corporis laudantium neque nisi odio sapiente? Aliquam dicta doloribus, ducimus eius esse est
-            eveniet ipsa iure maxime natus nobis pariatur porro quam qui quisquam quos sed, soluta temporibus unde.
-        </div>
-        <div>Adipisci deserunt dignissimos distinctio ipsum labore nisi odio odit, officiis, possimus provident quod
-            similique soluta, voluptatem! Adipisci, doloremque eaque eos, exercitationem fugiat in ipsa maiores numquam
-            recusandae, sequi tempora tempore!
-        </div>
-        <div>Autem cupiditate debitis odit totam! A iste omnis quasi sunt. Ab facere hic id ipsum iure nemo, quo
-            similique voluptas? Aliquam corporis esse, ex fuga hic inventore maxime quia quidem!
-        </div>
-        <div>Alias asperiores blanditiis consectetur cumque delectus enim eum exercitationem, fugiat iste, nemo nulla
-            obcaecati, perspiciatis ratione saepe ullam veritatis voluptatibus. A deleniti dolorum necessitatibus
-            nostrum quibusdam quos temporibus veniam voluptatem.
-        </div>
-        <div>At cupiditate dicta dignissimos dolor dolorum, facere inventore iure necessitatibus, neque, porro quaerat
-            qui reiciendis rerum temporibus voluptates. Commodi cum doloribus fugiat hic illum incidunt iure magnam
-            nobis odit quisquam.
-        </div>
-        <div>Animi asperiores autem consequatur, deleniti dignissimos distinctio eaque eius error et eum fuga fugiat hic
-            incidunt laboriosam laborum modi molestiae officiis pariatur perferendis praesentium qui, quo recusandae
-            reprehenderit ullam vero?
-        </div>
-        <div>Ab impedit modi numquam placeat possimus, praesentium quaerat reprehenderit tenetur? Animi at ducimus eius
-            expedita illum iure, iusto laudantium natus obcaecati perspiciatis quos soluta velit veniam voluptate
-            voluptatibus. Laborum, voluptatum.
-        </div>
-    </div>
-
-    <div id="about"><h2>about</h2>
+<nav>
+    <ul>
+        <li><a href="#main">main</a></li>
+        <li><a href="#about" >about</a></li>
+        <li><a href="#contacts">contacts</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">facebook</a></li>
+    </ul>
+</nav>
+<div id="content">
+    <div class="content-item" id="about">
+        <h2>about</h2>
 
         <div>Aperiam at debitis dolorem doloribus, est eum fugit id itaque obcaecati quibusdam repellat sequi
             temporibus! Asperiores beatae blanditiis deserunt est expedita explicabo labore modi natus odit vero!
@@ -99,7 +59,8 @@
         </div>
     </div>
 
-    <div id="contacts"><h2>contacts</h2>
+    <div class="content-item" id="contacts">
+        <h2>contacts</h2>
 
         <div>Ad aperiam impedit odio! Culpa dolore, doloribus harum illo itaque libero nam rem voluptatem! Atque
             consequuntur deserunt illo inventore iusto libero minus nesciunt nostrum odio, quisquam, quo ratione sequi
@@ -142,9 +103,51 @@
         </div>
     </div>
 
+    <div class="content-item" id="main">
+        <h2 >main</h2>
+
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque delectus dolorum et fuga itaque
+            pariatur qui tempora temporibus velit. Adipisci assumenda consequatur consequuntur excepturi expedita illo
+            labore nihil non?
+        </div>
+        <div>Aliquam beatae cupiditate doloremque rerum tempora veritatis. Ab accusantium atque culpa dignissimos
+            eveniet explicabo maxime soluta voluptatem? Consequuntur et exercitationem facere modi qui quo reiciendis
+            repellendus repudiandae, saepe sed veritatis?
+        </div>
+        <div>Aperiam assumenda consequuntur distinctio eligendi error esse illum impedit, laudantium mollitia,
+            praesentium provident recusandae saepe suscipit ullam voluptates. Aliquam blanditiis hic molestias nesciunt
+            nostrum odio quae quaerat saepe temporibus voluptatum!
+        </div>
+        <div>Asperiores corporis laudantium neque nisi odio sapiente? Aliquam dicta doloribus, ducimus eius esse est
+            eveniet ipsa iure maxime natus nobis pariatur porro quam qui quisquam quos sed, soluta temporibus unde.
+        </div>
+        <div>Adipisci deserunt dignissimos distinctio ipsum labore nisi odio odit, officiis, possimus provident quod
+            similique soluta, voluptatem! Adipisci, doloremque eaque eos, exercitationem fugiat in ipsa maiores numquam
+            recusandae, sequi tempora tempore!
+        </div>
+        <div>Autem cupiditate debitis odit totam! A iste omnis quasi sunt. Ab facere hic id ipsum iure nemo, quo
+            similique voluptas? Aliquam corporis esse, ex fuga hic inventore maxime quia quidem!
+        </div>
+        <div>Alias asperiores blanditiis consectetur cumque delectus enim eum exercitationem, fugiat iste, nemo nulla
+            obcaecati, perspiciatis ratione saepe ullam veritatis voluptatibus. A deleniti dolorum necessitatibus
+            nostrum quibusdam quos temporibus veniam voluptatem.
+        </div>
+        <div>At cupiditate dicta dignissimos dolor dolorum, facere inventore iure necessitatibus, neque, porro quaerat
+            qui reiciendis rerum temporibus voluptates. Commodi cum doloribus fugiat hic illum incidunt iure magnam
+            nobis odit quisquam.
+        </div>
+        <div>Animi asperiores autem consequatur, deleniti dignissimos distinctio eaque eius error et eum fuga fugiat hic
+            incidunt laboriosam laborum modi molestiae officiis pariatur perferendis praesentium qui, quo recusandae
+            reprehenderit ullam vero?
+        </div>
+        <div>Ab impedit modi numquam placeat possimus, praesentium quaerat reprehenderit tenetur? Animi at ducimus eius
+            expedita illum iure, iusto laudantium natus obcaecati perspiciatis quos soluta velit veniam voluptate
+            voluptatibus. Laborum, voluptatum.
+        </div>
+    </div>
 
 
-</section>
+</div>
 
 </body>
 </html>
