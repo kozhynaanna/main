@@ -99,4 +99,10 @@ nav ul ::before,::after {
         display: flex;
         justify-content: space-between;
     }
+      nav ul li {
+        flex: 1 1 33%;
+    }
+    nav ul a {
+        text-align: center;
+    }
 }
